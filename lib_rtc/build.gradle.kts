@@ -35,9 +35,9 @@ android {
 }
 
 dependencies {
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
+    compileOnly(libs.androidx.core.ktx)
+    compileOnly(libs.androidx.appcompat)
+    compileOnly(libs.material)
 
     implementation(libs.jjwt.api)
     implementation(libs.jjwt.impl)
