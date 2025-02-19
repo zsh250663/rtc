@@ -31,8 +31,8 @@ class WebSocketConfig private constructor(
         private var videoHeight: Int = 0
         private var modelId: String? = null
         private var url: String = "wss://api-gai.sensetime.com/agent-5o/duplex/ws"
-        private var iss: String = "agent-5o-app-jwt-20241024"
-        private var secretKey: String = "be09c9d82f7be4f9dc4ed07ca6318203"
+        private var iss: String = ""
+        private var secretKey: String = ""
 
         fun setAudioOnly(audioOnly: Boolean) = apply { this.audioOnly = audioOnly }
         fun setVoiceType(voiceType: String) = apply { this.voiceType = voiceType }
