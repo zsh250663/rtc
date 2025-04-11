@@ -18,7 +18,7 @@ abstract class DefaultSenseEngine: ISenseEngineCallback {
     override fun onStopSpeaking() {
     }
 
-    override fun onResponseTextSegment() {
+    override fun onResponseTextSegment(string: String?) {
     }
 
     override fun audioAccepting() {

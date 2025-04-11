@@ -139,10 +139,10 @@ class WebSocketManager {
                     }
 
                     "ResponseTextSegment" -> {
-                        callback?.onResponseTextSegment()
+                        callback?.onResponseTextSegment(msg.getString("text"))
                     }
 
-                    "ResponseFullText" -> {
+                    "ResponseEndTextStream" -> {
                         callback?.onResponseFullText(msg.getString("text"))
                     }
 
